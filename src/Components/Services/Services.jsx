@@ -2,39 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FadeIn from "../fadein";
 import {
-  imports,
-  marine,
-  supply,
-  taxi,
-  third_party,
-  transportation,
-  warehouse,
+  machinery,
+  mechanized,
+  poultry,
 } from "../../imports";
 
 const services = [
   {
-    heading: "Transportation & Haulage",
-    body: "Muuvylity Logistics Ltd provides reliable, efficient, and secure transportation and haulage services across land, air, and sea to meet the diverse needs of individuals, businesses, and corporate clients.",
-    img: transportation,
+    heading: "Supply of Agro-Allied Equipment, Machinery, Fertilizers, and Agrochemicals",
+    body: "Gropropak Africa Ltd provides farmers, agribusinesses, and cooperatives with a comprehensive range of highquality agro-allied products designed to maximize productivity and efciency in modern farming.",
+    img: machinery,
   },
   {
-    heading: "E-Ride Taxi Services & Fleet Management",
-    body: "Muuvylity Logistics Ltd provides modern e-ride taxi services designed to offer safe, convenient, and efficient transportation for individuals and corporate clients.",
-    img: taxi,
+    heading: "Mechanized Farming and Large-Scale Crop Production",
+    body: "Gropropak Africa Ltd specializes in modern mechanized farming, providing large-scale cultivation of both staple and cash crops with efficiency, precision, and sustainability.",
+    img: mechanized,
   },
   {
-    heading: "Warehousing & Inventory Management",
-    body: "Muuvylity Logistics Ltd provides comprehensive warehousing and inventory management solutions designed to optimize the storage, handling, and distribution of goods for businesses, manufacturers, and retailers.",
-    img: warehouse,
+    heading: "Poultry, Livestock, and Fishery Farming",
+    body: "Gropropak Africa Ltd operates highly efcient poultry, livestock, and aquaculture systems designed to produce premium-quality animal protein for domestic and commercial markets.",
+    img: poultry,
   },
 ];
 
 const Services = () => {
   return (
-    <section className="px-7 py-16 bg-gray-50 text-customRed">
+    <section className="px-7 py-16 bg-gray-50 text-[#1d4c08]">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-black">
-          Our <span className="text-customRed">Services</span>
+          Our <span className="text-[#1d4c08]">Services</span>
         </h2>
 
         {/* Card Grid */}
@@ -79,7 +75,7 @@ const Services = () => {
         {/* CTA */}
         <Link
           to="/services"
-          className="inline-block mt-10 px-6 py-3 rounded-full bg-customRed text-white font-semibold hover:scale-105 transition duration-300 shadow-md"
+          className="inline-block mt-10 px-6 py-3 rounded-full bg-[#1d4c08] text-white font-semibold hover:scale-105 transition duration-300 shadow-md"
         >
           See all services
         </Link>

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import "./herosection.css";
 import { heroimg } from "../../imports";
 
-// Animation variants
 const leftContent = {
   hidden: { opacity: 0, x: -60 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -23,14 +22,17 @@ const buttonVariants = {
 const Herosection = () => {
   return (
     <section className="relative overflow-hidden bg-cover bg-center bg-no-repeat">
+      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat kenburns-top pointer-events-none z-0"
         style={{ backgroundImage: `url(${heroimg})` }}
       ></div>
-      <div className="absolute inset-0 bg-[#4d0000] opacity-70"></div>
 
+      {/* Dark green overlay using brand color */}
+      <div className="absolute inset-0 bg-[#1b4808]/85 z-10"></div>
+
+      {/* Hero Content */}
       <div className="relative z-20 container mx-auto px-7 lg:px-10 pt-20 lg:py-40 py-24 flex flex-col lg:flex-row items-center gap-12">
-        {/* Left Content */}
         <motion.div
           className="p-5 lg:mx-20 text-center lg:text-center"
           variants={leftContent}
@@ -38,15 +40,16 @@ const Herosection = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <p className="text-customYellow font-bold">Muuvylity Logistics Ltd</p>
-          <h1 className="text-3xl lg:text-5xl font-black text-white tracking-normal pb-6">
-            Delivering reliable haulage and supply chain solutions across
-            Nigeria and beyond.
+          <p className="text-[#8db937] font-bold tracking-wide">
+            GROPROPAK AFRICA LTD
+          </p>
+
+          <h1 className="text-3xl lg:text-5xl font-black text-white tracking-normal pb-6 drop-shadow-lg">
+            Transforming Agriculture Across Africa Through Innovation, Technology, and Sustainable Agribusiness Solutions
           </h1>
-          <p className="text-white text-base lg:text-lg opacity-90">
-            The aim is to provide comprehensive, reliable, and effcient
-            logistics solutions, optimizing supply chains and building strong
-            client partnerships.
+
+          <p className="text-white text-base lg:text-lg opacity-95 max-w-2xl mx-auto">
+            A vision to revolutionize Africa’s agricultural landscape, bridging the gap between traditional farming and modern agribusiness practices.
           </p>
 
           {/* CTA Buttons */}
@@ -62,14 +65,14 @@ const Herosection = () => {
               viewport={{ once: true }}
               className="w-[70%] lg:w-auto"
             >
-              <button className="w-full lg:w-auto rounded-full flex gap-2 items-center justify-center bg-white px-6 py-4 lg:px-8 lg:py-4 font-bold text-black cursor-pointer hover:scale-105 transition text-base lg:text-base">
-                <FaWhatsapp size={24} className="lg:size-27" />
+              <button className="w-full lg:w-auto rounded-full flex gap-2 items-center justify-center bg-[#8db937] px-6 py-4 lg:px-8 lg:py-4 font-bold text-white cursor-pointer hover:bg-[#163706] transition text-base lg:text-base hover:scale-105 shadow-md">
+                <FaWhatsapp size={24} />
                 Chat us
               </button>
             </motion.a>
 
             <motion.a
-              href="mailto:info@muuvilitylogisticsltd.com"
+              href="mailto:info@gropropakafrica.com"
               variants={buttonVariants}
               custom={1}
               initial="hidden"
@@ -77,8 +80,8 @@ const Herosection = () => {
               viewport={{ once: true }}
               className="w-[70%] lg:w-auto"
             >
-              <button className="w-full lg:w-auto rounded-full flex gap-2 items-center justify-center border-white hover:bg-customYellow border-2 px-6 py-4 lg:px-8 lg:py-4 font-bold text-white cursor-pointer hover:scale-105 transition text-base lg:text-base">
-                <MdOutlineMail size={24} className="lg:size-27" />
+              <button className="w-full lg:w-auto rounded-full flex gap-2 items-center justify-center border-2 border-[#8db937] text-white hover:bg-[#8db937] hover:text-white px-6 py-4 lg:px-8 lg:py-4 font-bold cursor-pointer transition text-base lg:text-base hover:scale-105 shadow-md">
+                <MdOutlineMail size={24} />
                 Email us
               </button>
             </motion.a>

@@ -3,33 +3,34 @@ import { motion } from "framer-motion";
 import { CircleCheckBig } from "lucide-react";
 
 const advantagesList = [
-  "Integrated logistics solutions under one roof, from transportation to warehousing and distribution.",
-  "Experienced and professional team committed to efficiency, safety, and reliability.",
-  "Cutting-edge technology for fleet tracking, inventory management, and supply chain optimization.",
-  "Strong partnerships with carriers, manufacturers, and suppliers to ensure competitive pricing and dependable service.",
-  "Commitment to customer satisfaction and transparent operations.",
+  "Comprehensive agricultural expertise and services under one roof.",
+  "Strong partnerships with local and international stakeholders.",
+  "Commitment to innovation and sustainable practices.",
+  "Proven capacity in farming, processing, and distribution.",
+  "Reliable, transparent, and customer-focused operations.",
 ];
 
 const strategies = [
   {
-    title: "Expansion of Fleet Size and Logistics Coverage:",
-    body: "We aim to increase our fleet capacity and extend our transportation network across Nigeria and to international routes, ensuring wider reach and faster delivery times.",
+    title: "Expansion of Mechanized and Industrial Farming Operations: ",
+    body: "We aim to increase the scale and efficiency of crop and livestock production through advanced mechanization, modern farm management practices, and optimized resource utilization.",
   },
   {
-    title: "Strategic Investment in Warehousing, Technology, and Infrastructure:",
-    body: "By investing in modern warehouses, advanced inventory management systems, and state-of-the-art transport infrastructure, we enhance efficiency, reduce operational costs, and support seamless logistics operations.",
+    title:
+      "Strategic Investment in Agro-Processing and Manufacturing Facilities:",
+    body: " By developing processing plants and manufacturing units, we add value to raw agricultural produce, improve product quality, reduce post-harvest losses, and create competitive products for local and international markets.",
   },
   {
-    title: "Development of E-Hailing Platforms and Smart Fleet Management:",
-    body: "We leverage technology to provide innovative ride-hailing solutions, track fleet performance, optimize routes, and improve service delivery for both individual and corporate clients.",
+    title: "Building Strong Export Partnerships for African Produce:",
+    body: "We focus on establishing reliable trade relationships with international buyers, exporters, and distributors to ensure that African agricultural products gain access to premium markets worldwide.",
   },
   {
-    title: "Strengthening Partnerships with Carriers, Manufacturers, and Industry Stakeholders:",
-    body: "Building strong relationships with key partners allows us to negotiate better rates, expand market reach, and deliver superior services to clients.",
+    title: "Integration of Digital Tools and Smart Farming Technologies:",
+    body: "We leverage modern digital solutions such as precision farming tools, farm management software, and data analytics to optimize production, monitor performance, and make informed operational decisions.",
   },
   {
-    title: "Continuous Training and Capacity Building:",
-    body: "We invest in the development of our workforce through training programs, workshops, and skills enhancement initiatives to maintain high professional standards and operational excellence.",
+    title: "Continuous Training and Capacity Building for Farmers and Staff:",
+    body: "We prioritize human capital development through training programs, workshops, and knowledge-sharing initiatives, ensuring that farmers and employees are equipped with the latest skills, techniques, and best practices in modern agribusiness.",
   },
 ];
 
@@ -56,7 +57,7 @@ const Advantages = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-3xl lg:text-4xl font-bold mb-12 text-center text-customRed"
+        className="text-3xl lg:text-4xl font-bold mb-12 text-center text-[#1b4808]"
       >
         Why Choose Us?
       </motion.h2>
@@ -65,7 +66,7 @@ const Advantages = () => {
       <ul className="space-y-6 mb-12">
         {advantagesList.map((advantage, index) => (
           <li key={index} className="flex items-start">
-            <CircleCheckBig className="mr-3 text-customRed flex-shrink-0 mt-1" />
+            <CircleCheckBig className="mr-3 text-[#1b4808] flex-shrink-0 mt-1" />
             <p className="text-gray-700">{advantage}</p>
           </li>
         ))}
@@ -74,51 +75,51 @@ const Advantages = () => {
       {/* Legacy & Leadership side by side on desktop */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-100 p-6 rounded-2xl mb-12">
         <div>
-          <h2 className="text-2xl font-semibold text-customRed mb-3 tracking-wide">
-            OUR LEGACY POSITIONING
+          <h2 className="text-2xl font-semibold text-[#1b4808] mb-3 tracking-wide">
+            OUR LEGACY
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Muuvylity Logistics Ltd is committed to leaving a lasting legacy of
-            innovation, reliability, and excellence in the logistics and supply
-            chain sector in Nigeria. Our work extends beyond moving goods; we
-            empower businesses by improving operational efficiency, reducing
-            costs, and creating employment opportunities. By integrating modern
-            technology, optimized supply chains, and professional service
-            delivery, we contribute to the growth of commerce, strengthen the
-            national logistics infrastructure, and foster economic development
-            that benefits communities and stakeholders nationwide.
+            Gropropak Africa Ltd is committed to leaving a lasting legacy of
+            agricultural transformation across Africa. Our work goes beyond
+            production and trade; we aim to empower farmers, create sustainable
+            employment opportunities, and establish resilient food security
+            systems that benet communities and national economies. By
+            integrating modern farming techniques, agro-processing, value chain
+            development, and responsible trade practices, we are building a
+            foundation for long-term agricultural growth, innovation, and
+            prosperity that will positively impact generations to come.
           </p>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold text-customRed mb-3 tracking-wide">
+          <h2 className="text-2xl font-semibold text-[#1b4808] mb-3 tracking-wide">
             LEADERSHIP
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            The leadership team at Muuvylity Logistics Ltd is composed of
-            seasoned professionals with extensive experience in logistics,
-            transportation, supply chain management, and corporate governance.
-            Their combined expertise guides strategic planning, operational
-            execution, and continuous improvement across all company operations.
-            Our leaders prioritize innovation, customer satisfaction, and
-            sustainable business practices, ensuring that Muuvylity Logistics
-            Ltd remains at the forefront of the logistics industry. Through
-            strong governance, strategic vision, and hands-on management, the
-            leadership team drives growth, builds partnerships, and delivers
-            value to clients, partners, and the broader community.
+            The leadership team at Gropropak Africa Ltd is composed of visionary
+            professionals with extensive expertise in agriculture, agribusiness,
+            trade, and corporate governance. Each leader brings decades of
+            combined experience, guiding the company with strategic foresight,
+            operational excellence, and innovative thinking. Our leaders are
+            committed to fostering sustainable growth, strengthening market
+            linkages, and ensuring the highest standards of quality, safety, and
+            efciency across all operations. With their guidance, Gropropak
+            Africa Ltd continues to build a culture of excellence, integrity,
+            and impact, positioning the company as a trusted partner for
+            farmers, investors, and stakeholders in the African agricultural
+            sector.
           </p>
         </div>
       </div>
 
       {/* Strategies */}
       <div className="mb-12">
-        <h2 className="text-2xl font-semibold text-customRed mb-6 tracking-wide">
+        <h2 className="text-2xl font-semibold text-[#1b4808] mb-6 tracking-wide">
           STRATEGIES FOR GROWTH AND SUCCESS
         </h2>
         <p className="text-gray-700 mb-6">
-          Muuvylity Logistics Ltd employs a dynamic and forward-looking strategy
-          to drive sustainable growth, expand service coverage, and maintain
-          excellence in logistics and supply chain management. Key strategies
-          include:
+          Gropropak Africa Ltd employs a multi-faceted strategy to drive
+          sustainable growth, strengthen market presence, and enhance
+          agricultural productivity across Africa. Key strategies include:
         </p>
 
         <div className="space-y-6">
@@ -132,7 +133,7 @@ const Advantages = () => {
               viewport={{ once: true }}
               className="p-6 rounded-xl bg-white shadow-md"
             >
-              <h4 className="text-lg font-semibold text-customRed mb-2">
+              <h4 className="text-lg font-semibold text-[#1b4808] mb-2">
                 {strategy.title}
               </h4>
               <p className="text-gray-700 leading-relaxed">{strategy.body}</p>
@@ -141,32 +142,31 @@ const Advantages = () => {
         </div>
 
         <p className="text-gray-700 mt-6">
-          Through these strategies, Muuvylity Logistics Ltd ensures sustainable
-          growth, operational efficiency, and consistent delivery of high-quality
-          logistics services to clients across all sectors.
+          Through these strategies, Gropropak Africa Ltd strengthens its
+          competitive edge, promotes sustainable agriculture, and drives
+          economic growth while empowering farmers and communities.
         </p>
       </div>
 
       {/* Craftsmanship */}
       <div>
-        <h2 className="text-2xl font-semibold text-customRed mb-4 tracking-wide">
+        <h2 className="text-2xl font-semibold text-[#1b4808] mb-4 tracking-wide">
           CRAFTSMANSHIP AND QUALITY
         </h2>
         <p className="text-gray-700 leading-relaxed">
-          MUUVYLITY LOGISTICS LTD is dedicated to achieving excellence in every
-          facet of logistics and supply chain management. From transportation
-          and haulage to warehousing, fleet management, and specialized logistics
-          services, we prioritize quality, reliability, and efficiency. We
-          leverage advanced technology, modern equipment, and industry best
-          practices to ensure that every operation is executed safely, on time,
-          and to the highest standard. Our commitment to craftsmanship and
-          quality extends to continuous monitoring, rigorous maintenance of
-          vehicles and facilities, and adherence to operational protocols that
-          guarantee the integrity and safety of goods in transit. By maintaining
-          strict quality control, implementing innovative solutions, and
-          fostering a culture of excellence, Muuvylity Logistics Ltd builds
-          trust with clients, strengthens its market reputation, and consistently
-          delivers value across all logistics and supply chain services.
+          At Gropropak Africa Ltd, we are dedicated to excellence in every facet
+          of our operations. From farm production to agro-processing, equipment
+          supply, and distribution, we ensure that all products and services
+          meet the highest standards of quality and reliability. We achieve this
+          by leveraging premium inputs, advanced machinery, and modern
+          technology, combined with skilled personnel and globally recognized
+          best practices. Our rigorous quality control systems, adherence to
+          regulatory standards, and commitment to continuous improvement
+          guarantee that every product delivered and service rendered provides
+          lasting value to our clients, partners, and stakeholders. By
+          maintaining uncompromising standards in craftsmanship and quality,
+          Gropropak Africa Ltd builds trust, strengthens its brand reputation,
+          and ensures sustainable success across all areas of agribusiness.
         </p>
       </div>
     </div>

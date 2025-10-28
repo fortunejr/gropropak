@@ -1,59 +1,65 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import {
-  marine,
-  supply,
-  taxi,
-  third_party,
-  transportation,
-  warehouse,
-  imports,
+  machinery,
+  mechanized,
+  poultry,
+  agroprocessing,
+  comission,
+  fertilizer,
+  exportss,
+  general
 } from "../../imports";
 
 const services = [
   {
-    heading: "Transportation & Haulage",
-    body: "Muuvylity Logistics Ltd provides reliable, efficient, and secure transportation and haulage services across land, air, and sea to meet the diverse needs of individuals, businesses, and corporate clients. Our services cover the movement of goods of all types, including raw materials, finished products, heavy machinery, and sensitive cargo, ensuring they reach their destinations safely and on schedule. We employ a modern fleet of vehicles, including trucks, vans, and specialized carriers, complemented by strategic partnerships with air and sea transport providers for seamless logistics solutions. Our team of professional drivers, logistics planners, and support staff ensure careful handling, route optimization, and compliance with all relevant regulations. By integrating advanced tracking systems, real-time monitoring, and proactive communication, Muuvylity Logistics Ltd delivers peace of mind to clients, guaranteeing transparency, accountability, and timely delivery. Our comprehensive haulage solutions are designed to reduce operational costs, minimize transit risks, and support the growth and efficiency of our clients’ businesses.",
-    img: transportation,
+    heading: "Supply of Agro-Allied Equipment, Machinery, Fertilizers, and Agrochemicals",
+    body: "Gropropak Africa Ltd provides farmers, agribusinesses, and cooperatives with a comprehensive range of highquality agro-allied products designed to maximize productivity and efciency in modern farming. Our offerings include farm implements, tractors, harvesters, planters, irrigation systems, storage equipment, and other essential machinery tailored for small, medium, and large-scale farms. We also supply essential agricultural inputs such as fertilizers, agrochemicals, pesticides, herbicides, and livestock feeds, carefully sourced to meet both local and international quality standards. Each product undergoes strict quality assurance checks to ensure reliability, durability, and pesticides, herbicides, and livestock feeds, carefully sourced to meet both local and international quality standards. Each product undergoes strict quality assurance checks to ensure reliability, durability, and compliance with relevant regulations. Our approachemphasizes safety, proper handling, and timely delivery. We provide technical guidance and support for equipment operation, maintenance, and optimal usage of agrochemicals and fertilizers to ensure maximum yield and effciency. By combining trusted sourcing, certified products, and expert support, GROPROPAK Africa Ltd ensures that farmers and agribusinesses have access to the right tools and inputs to succeed in modern, competitive agriculture.",
+    img: machinery,
   },
   {
-    heading: "E-Ride Taxi Services & Fleet Management",
-    body: "Muuvylity Logistics Ltd provides modern e-ride taxi services designed to offer safe, convenient, and efficient transportation for individuals and corporate clients. Our fleet is equipped with advanced vehicle tracking systems, ensuring real-time monitoring, route optimization, and timely service delivery. In addition to ride-hailing, we offer comprehensive fleet management solutions for businesses, including vehicle maintenance scheduling, fuel monitoring, driver performance management, and utilization optimization. By leveraging technology and data-driven insights, we help clients reduce operational costs, improve service efficiency, and maximize the productivity of their transportation assets. Our e-ride and fleet management services are tailored to meet the demands of urban mobility, corporate logistics, and specialized transport requirements, providing a reliable, innovative, and customer-focused solution for modern mobility challenges.",
-    img: taxi,
+    heading: "Mechanized Farming and Large-Scale Crop Production",
+    body: "Gropropak Africa Ltd specializes in modern mechanized farming, providing large-scale cultivation of both staple and cash crops with efficiency, precision, and sustainability. Our operations cover all stages of crop production, including land preparation, planting, crop management, irrigation, pest and disease control, and harvesting. We utilize advanced machinery such as tractors, planters, harvesters, and precision farming equipment, operated by highly skilled personnel trained to optimize productivity while minimizing waste. Our approach integrates modern farming techniques, soil testing, crop rotation, and sustainable practices to improve soil health, increase yields, and reduce environmental impact.",
+    img: mechanized,
   },
   {
-    heading: "Warehousing & Inventory Management",
-    body: "Muuvylity Logistics Ltd provides comprehensive warehousing and inventory management solutions designed to optimize the storage, handling, and distribution of goods for businesses, manufacturers, and retailers. Our services cover secure storage, stock control, order processing, packaging, and timely distribution across multiple strategically located warehouses. We employ advanced inventory management systems, real-time tracking, and automated reporting tools to ensure optimal stock levels, minimize shortages or overstocking, and streamline order fulfillment processes. Our warehouses are equipped with modern storage facilities, climate control where needed, and safety systems to preserve the quality and integrity of goods. By integrating professional inventory planning, packaging solutions, and efficient logistics coordination, Muuvylity Logistics Ltd ensures that products move seamlessly through the supply chain, reducing operational costs, preventing delays, and enhancing overall customer satisfaction.",
-    img: warehouse,
+    heading: "Poultry, Livestock, and Fishery Farming",
+    body: "Gropropak Africa Ltd operates highly efficient poultry, livestock, and aquaculture systems designed to produce premium-quality animal protein for domestic and commercial markets. Our operations cover the full value chain, including farm design, breeding, feeding, health management, biosecurity, and harvesting. In poultry, we manage both broiler and layer production using modern housing systems, optimized feeding regimes, and vaccination schedules to ensure high productivity and minimal mortality. Our livestock programs include cattle, goats, sheep, and pigs, managed with proper grazing, nutrition, veterinary care, and disease prevention measures. Our aquaculture systems are designed for sustainable ash production, with careful attention to water quality management, feed optimization, disease control, and stocking density. All operations are supported by veterinary expertise, technical guidance, and monitoring systems to ensure animal welfare, food safety, and consistent product quality. By integrating modern farming practices, strict biosecurity protocols, and professional management, Gropropak Africa Ltd delivers reliable, high-quality animal protein while promoting sustainable and profitable farming.",
+    img: poultry,
   },
   {
-    heading: "Supply Chain Optimization",
-    body: "Muuvylity Logistics Ltd specializes in streamlining end-to-end supply chain operations to ensure efficiency, cost-effectiveness, and timely delivery of goods from raw materials to end customers. Our approach involves analyzing every stage of the supply chain, identifying bottlenecks, and implementing strategies to optimize procurement, inventory management, transportation, and distribution. We leverage advanced logistics software, route optimization tools, and real-time data tracking to reduce operational costs, minimize delays, and improve overall service performance. By coordinating suppliers, carriers, warehouse operations, and delivery channels, we create a seamless flow of goods that enhances reliability and customer satisfaction. Our supply chain optimization services enable businesses to operate more efficiently, respond quickly to market demands, and maintain a competitive edge while ensuring products reach their destinations safely and on time.",
-    img: supply,
+    heading: "Agro-Processing and Value Chain Development",
+    body: "Gropropak Africa Ltd specializes in transforming raw agricultural produce into high-quality, market-ready products through efcient agro-processing and value chain development. Our operations cover cleaning, grading, milling, packaging, and branding of crops and other farm products to meet domestic and international market standards. We integrate smallholder and commercial farmers into our value chain, providing them with access to technical support, inputs, and guaranteed market linkages. Using modern processing equipment, strict quality control measures, and certified standards, we ensure that every product delivered is safe, durable, and of superior quality. Our structured distribution channels and marketing strategies connect farmers, processors, and buyers, reducing post-harvest losses and increasing profitability across the agricultural value chain. By combining innovation, technology, and strategic partnerships, Gropropak Africa Ltd maximizes value for all stakeholders while promoting sustainable agricultural practices.",
+    img: agroprocessing,
   },
   {
-    heading: "Third-Party & Specialized Logistics Services",
-    body: "Muuvylity Logistics Ltd provides comprehensive third-party (3PL) and specialized logistics services, including fourth-party (4PL) logistics, inbound, outbound, and reverse logistics solutions, tailored to meet the unique needs of businesses and organizations. Our services cover the management of entire supply chains, coordination with multiple service providers, and optimization of transportation, warehousing, and distribution processes. We integrate advanced logistics technology, real-time tracking, and data-driven planning to ensure seamless operations, cost efficiency, and timely delivery. Inbound logistics focuses on the efficient movement of raw materials and supplies to manufacturing or storage facilities, while outbound logistics ensures finished products reach customers and markets promptly. Reverse logistics enables efficient returns, recycling, and waste management, supporting sustainability and operational flexibility. By offering end-to-end logistics solutions, Muuvylity Logistics Ltd helps businesses streamline their operations, reduce costs, improve customer satisfaction, and maintain a competitive advantage in a dynamic market environment.",
-    img: third_party,
+    heading: "Fertilizer and Cereal Production",
+    body: "Gropropak Africa Ltd engages in the production and supply of high-quality blended fertilizers and processed cereals, including maize, rice, sorghum, and wheat, to support sustainable and productive farming. Our fertilizer production involves custom formulations tailored to the specific nutrient requirements of various crops, ensuring optimal soil health and crop yield. In cereal production, we process raw grains through cleaning, grading, milling, and packaging while maintaining strict adherence to food safety and hygiene standards. Each batch undergoes rigorous quality checks to guarantee purity, nutritional value, and consistency, meeting both local and international market requirements. By combining modern manufacturing processes, technical expertise, and certified quality assurance systems, Gropropak Africa Ltd ensures that farmers and agribusinesses receive reliable inputs and processed grains that enhance productivity, reduce post-harvest losses, and deliver high-quality products to consumers.",
+    img: fertilizer,
   },
   {
-    heading: "Imports, Exports & Manufacturing Representation",
-    body: "Muuvylity Logistics Ltd engages in the import, export, and distribution of manufactured goods, connecting producers to local and international markets. Our services encompass sourcing high-quality products, handling customs and regulatory compliance, and ensuring efficient transportation and delivery to clients worldwide. In addition, we act as trusted agents and representatives for manufacturers, promoting their products, managing sales channels, and providing after-sales support to strengthen brand presence and market penetration. By leveraging our extensive network, logistics expertise, and knowledge of international trade regulations, Muuvylity Logistics Ltd ensures seamless transactions, reduced operational risks, and reliable access to global markets for both manufacturers and clients.",
-    img: imports,
+    heading: "Export and Import of Agricultural Products, Timber, and Charcoal",
+    body: "Gropropak Africa Ltd is actively engaged in the export and import of agricultural commodities and forest products, including timber and charcoal, connecting local producers to international markets. Our operations cover the full trade cycle, including sourcing highquality products, conducting quality grading, packaging for safe transport, and managing logistics to ensure timely delivery. We strictly comply with all relevant local and international regulations, including sanitary and phytosanitary standards, to guarantee that all products meet legal and quality requirements. By maintaining transparent documentation, traceability, and adherence to sustainability practices where applicable, we ensure responsible and reliable trading. Through strategic partnerships with farmers, cooperatives, exporters, and buyers, Gropropak Africa Ltd creates value for stakeholders by expanding market access, enhancing product quality, and facilitating profitable trade across borders.",
+    img: exportss,
   },
   {
-    heading: "Marine Spare Parts & Mining Logistics Solutions",
-    body: "Muuvylity Logistics Ltd provides a comprehensive range of logistics support services for the maritime sector through the provisions of marine spare parts and equipment for vessels, ensuring that maritime operations are efficient, safe, and reliable. Our supply chain covers sourcing, quality verification, and timely delivery of essential marine components to clients in shipping, transport, and industrial sectors. In addition, we provide the same service solutions in the mining sector thereby leading to efficiency and downtime for mining companies by helping with processing, and exportation of solid minerals, operating in full compliance with all relevant government regulations and licensing requirements. Our operations leverage modern technology, safety protocols, and sustainable practices to ensure responsible extraction and high-quality output for both domestic and international markets. By combining technical expertise, regulatory compliance, and robust logistics capabilities, Muuvylity Logistics Ltd delivers dependable marine solutions and mineral products, contributing to industrial growth and economic development.",
-    img: marine,
+    heading: "Commission Agency and Manufacturers’ Representation",
+    body: "Gropropak Africa Ltd serves as a trusted agent and representative for agricultural equipment manufacturers, input suppliers, and commodity traders, helping them expand their reach and establish a strong presence in local and regional markets. Our role includes market development, promoting products, managing sales channels, and ensuring consistent after-sales support to maintain customer satisfaction and loyalty. We leverage our deep understanding of the agricultural sector, strong network of farmers and agribusinesses, and professional marketing strategies to create demand, facilitate transactions, and build long-term business relationships. By acting as a reliable intermediary, Gropropak Africa Ltd ensures that both manufacturers and end-users benefit from efficient product distribution, technical guidance, and responsive service, ultimately enhancing market access and profitability for all stakeholders.",
+    img: comission,
+  },
+  {
+    heading: "General Trading, Distribution, and Merchandising",
+    body: "Gropropak Africa Ltd operates a comprehensive trading and distribution network that handles both wholesale and retail supply of agricultural goods, agro-allied products, and general merchandise. Our operations include sourcing high-quality products from reliable suppliers, managing inventory across strategically located warehouses, and ensuring timely delivery to clients nationwide. We employ efficient supply chain management systems, transparent pricing policies, and robust logistics solutions to guarantee that products reach customers safely, promptly, and in optimal condition. By combining professional merchandising, market intelligence, and customer-focused service, Gropropak Africa Ltd ensures consistent availability of essential goods, strengthens market access for producers, and delivers value to both urban and rural customers across Nigeria and beyond.",
+    img: general,
   },
 ];
 
 const Services = () => {
   return (
-    <section className="py-5 bg-white text-customRed">
+    <section className="py-5 bg-white text-[#1b4808]">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
-        <div className="bg-red-100 px-2 py-5 rounded-xl shadow-sm mb-10">
+        <div className="bg-[#8db937] px-2 py-5 rounded-xl shadow-sm mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold text-center">
             Our Services
           </h2>
@@ -89,7 +95,7 @@ const Services = () => {
                 </h3>
                 <hr className="mb-2"/>
                 <div className="flex items-start gap-3">
-                  <FaCheckCircle className="text-customRed mt-1 flex-shrink-0" />
+                  <FaCheckCircle className="text-[#1b4808] mt-1 flex-shrink-0" />
                   <p className="text-left text-gray-700">{service.body}</p>
                 </div>
               </div>

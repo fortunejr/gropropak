@@ -3,22 +3,20 @@ import { Target, Eye, CircleCheckBig } from "lucide-react";
 import { cac } from "../../imports";
 
 const aimsandobj = [
-  "To provide public, private, and corporate transportation services and haulage via land, air, or sea.",
-  "To offer e-ride taxi services, fleet management, warehousing, and inventory optimization.",
-  "To manage end-to-end supply chains, including order processing, packaging, and shipping.",
-  "To reduce operational costs, optimize routes, and improve delivery times for clients.",
-  "To provide third-party, fourth-party, and specialized logistics services, including inbound, outbound, and reverse logistics.",
-  "To engage in general imports and exports, manufacturing representation, and distribution of goods.",
-  "To operate as construction contractors, estate developers, and suppliers of building materials where relevant.",
-  "To trade in marine spare parts and participate in mining, extraction, and exportation of solid minerals subject to approvals.",
+  "To acquire, develop, and share expertise in modern agribusiness.",
+  "To serve as financiers and facilitators of agricultural growth.",
+  "To manufacture and distribute farm equipment, inputs, and agro-allied products.",
+  "To process raw produce into finished goods for local and international markets.",
+  "To promote export and import of agricultural products and commodities.",
+  "To engage in sustainable farming practices, livestock breeding, and sheries.",
 ];
 
 const corevalues = [
-  "Reliability: Ensuring timely and safe delivery of goods.",
-  "Innovation: Leveraging technology for smarter logistics solutions.",
-  "Customer Focus: Prioritizing client satisfaction through responsive service.",
-  "Integrity: Conducting all operations transparently and ethically.",
-  "Efficiency: Optimizing operations to reduce costs and enhance productivity.",
+  "Innovation – Embracing modern technology and best practices.",
+  "Integrity – Conducting business with honesty and accountability.",
+  "Excellence – Delivering quality solutions across our operations.",
+  "Sustainability – Promoting eco-friendly and long-term practices.",
+  "Partnership – Building strong collaborations with stakeholders.",
 ];
 
 const About = () => {
@@ -29,24 +27,18 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10 mb-12">
           {/* About Text */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-5 text-black text-center">About <span className="text-customRed">Muuvylity Logistics</span></h2>
+            <h2 className="text-4xl font-bold mb-5 text-black text-center">
+              About <span className="text-[#1b4808]">GROPROPAK AFRICA LTD</span>
+            </h2>
             <p className="text-black text-sm lg:text-base leading-relaxed">
-              Muuvylity Logistics Ltd was established with a vision to modernize
-              logistics and supply chain management in Nigeria. We recognize the
-              need for a company that seamlessly integrates transportation,
-              warehousing, fleet management, and specialized logistics services,
-              providing clients with a one-stop solution for all their logistics
-              needs.
+              Gropropak Africa Ltd is a modern agribusiness and agro-allied
+              company established to transform agriculture into a sustainable,
+              technology-driven, and protable enterprise across Africa. With a
+              diversied portfolio that spans farming, processing,
+              manufacturing, equipment supply, and trading, we are committed to
+              empowering farmers, driving food security, and creating wealth
+              through agricultural innovation.
             </p>
-          </div>
-
-          {/* Image */}
-          <div className="w-full lg:w-1/2">
-            <img
-              className="rounded-2xl w-full object-contain"
-              src={cac}
-              alt="CAC Registration"
-            />
           </div>
         </div>
 
@@ -54,26 +46,29 @@ const About = () => {
         <div className="flex flex-col lg:flex-row gap-10 mb-16 bg-gray-100 p-7 rounded-xl">
           <div className="w-full lg:w-1/2">
             <div className="flex items-center gap-3 mb-3">
-              <Target className="text-customRed w-6 h-6" />
-              <h2 className="text-xl font-bold text-black tracking-wide">MISSION STATEMENT</h2>
+              <Target className="text-[#1b4808] w-6 h-6" />
+              <h2 className="text-xl font-bold text-black tracking-wide">
+                MISSION STATEMENT
+              </h2>
             </div>
             <p className="text-black text-sm lg:text-base leading-relaxed">
-              The company’s overarching strategic goal is to provide efficient,
-              reliable, and innovative logistics and supply chain solutions that
-              streamline operations, reduce costs, and enhance customer
-              experience leading to fulfillment and satisfaction.
+              To revolutionize agriculture in Africa by providing innovative
+              solutions, high-quality products, and sustainable practices that
+              enhance productivity, food security, and economic growth.
             </p>
           </div>
 
           <div className="w-full lg:w-1/2">
             <div className="flex items-center gap-3 mb-3">
-              <Eye className="text-customRed w-6 h-6" />
-              <h2 className="text-xl font-bold text-black tracking-wide">VISION STATEMENT</h2>
+              <Eye className="text-[#1b4808] w-6 h-6" />
+              <h2 className="text-xl font-bold text-black tracking-wide">
+                VISION STATEMENT
+              </h2>
             </div>
             <p className="text-black text-sm lg:text-base leading-relaxed">
-              To be the leading logistics and supply chain company in Nigeria,
-              known for innovation, reliability, and excellence in service
-              delivery.
+              To become Africa’s leading agribusiness powerhouse, recognized for
+              excellence in farming, processing, manufacturing, and global
+              agricultural trade.
             </p>
           </div>
         </div>
@@ -86,7 +81,7 @@ const About = () => {
           <ul className="list-disc list-inside space-y-3 text-black text-sm lg:text-base">
             {aimsandobj.map((item, index) => (
               <li key={index} className="leading-relaxed flex items-center">
-                <CircleCheckBig className="mr-3 text-customRed flex-shrink-0" />
+                <CircleCheckBig className="mr-3 text-[#1b4808] flex-shrink-0" />
                 {item}
               </li>
             ))}
@@ -107,7 +102,7 @@ const About = () => {
                 {/* Number box */}
                 <div
                   className={`px-5 py-4 text-white font-bold text-lg ${
-                    index % 2 === 0 ? "bg-red-600" : "bg-black"
+                    index % 2 === 0 ? "bg-[#1b4808]" : "bg-black"
                   }`}
                 >
                   {String(index + 1).padStart(2, "0")}

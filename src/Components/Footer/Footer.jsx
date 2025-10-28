@@ -14,13 +14,15 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:w-1/4">
             <Link to={"/"}>
-              <img className="h-14 mb-4 bg-white p-2 rounded-lg" src={logo} alt="LumiGrid logo" />
+              <img
+                className="h-14 mb-4 bg-white p-2 rounded-lg"
+                src={logo}
+                alt="LumiGrid logo"
+              />
             </Link>
             <p className="text-white text-sm leading-relaxed">
-              We recognize the need for a company that seamlessly integrates
-              transportation, warehousing, fleet management, and specialized
-              logistics services, providing clients with a one-stop solution for
-              all their logistics needs.
+              Gropropak Africa Ltd stands as a beacon of agricultural
+              transformation, innovation, and sustainable growth in Africa.
             </p>
           </div>
 
@@ -30,31 +32,24 @@ const Footer = () => {
               Contact Information
             </h2>
             <p className="text-white text-sm">
-              📍 B46 Marcus Gundiri Street, Sunshine Estate, Gwarimpa,FCT-Abuja,
-              Nigeria
+              📍 Nwachukwu & Compound, New Phase of Umuobe, Behind Grail Message
+              Centre; Opobo Road, Obingwa Aba, Abia State, Nigeria.
             </p>
-            <a href="mailto:info@muuvilitylogisticsltd.com">
+            <a href="mailto:growpropakafricaltdjk@gmail.com">
               <p className="text-white text-sm mt-2">
-                📧 info@muuvilitylogistics.com
-              </p>
-            </a>
-            <a href="mailto:muuvylitylogisticsltd825@gmail.com">
-              <p className="text-white text-sm mt-2">
-                📧 imuuvylitylogisticsltd825@gmail.com
+                📧 growpropakafricaltdjk@gmail.com
               </p>
             </a>
             <a href="tel:+2349091112210">
               <p className="flex items-center gap-3 text-white mt-2">
                 <MdPhone className="text-white text-sm" />
-                <span> +234-909-111-2210
-                </span>
+                <span> +234-909-111-2210</span>
               </p>
             </a>
             <a href="tel:+2348163647971">
               <p className="flex items-center gap-3 text-white">
                 <MdPhone className="text-white text-sm" />
-                <span> +234-816-364-7971
-                </span>
+                <span> +234-816-364-7971</span>
               </p>
             </a>
           </div>
@@ -91,10 +86,13 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-center text-sm mt-10 text-white">
-          &copy; {year} MUUVYLITY LOGISTICS LTD
+          &copy; {year} GROPROPAK AFRICA LTD
         </p>
         <p className="text-center text-[9px] mt-10 text-blue-400">
-          Built by <a href='https://xmotivotechnologies.com/' target='_blank'>xMotivo Technologies Ltd</a>
+          Built by{" "}
+          <a href="https://xmotivotechnologies.com/" target="_blank">
+            xMotivo Technologies Ltd
+          </a>
         </p>
       </div>
     </footer>

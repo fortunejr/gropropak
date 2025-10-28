@@ -62,18 +62,24 @@ const Contact = () => {
                 ></iframe>
               </div> */}
 
-                <p className="flex items-center gap-3">
-                  <MdLocationOn className="text-customBlue lg:text-xl text-4xl" />
-                  <span>
-                    <strong>Address:</strong> B46 Marcus Gundiri Street, Sunshine Estate, Gwarimpa,FCT-Abuja, Nigeria
-                  </span>
-                </p>
-              <a href="mailto:info@omphoenixlimited.com.ng">
+              <p className="flex items-center gap-3">
+                <MdLocationOn className="text-customBlue lg:text-xl text-4xl" />
+                <span>
+                  <strong>Address:</strong> Nwachukwu & Compound, New Phase of
+                  Umuobe, Behind Grail Message Centre; Opobo Road, Obingwa Aba,
+                  Abia State, Nigeria.
+                </span>
+              </p>
+              <a href="mailto:growpropakafricaltdjk@gmail.com">
                 <p className="flex items-center gap-3">
                   <MdEmail className="text-customBlue text-xl gap-4" />
                   <span>
-                    <p><a href="mailto:info@muuvilitylogisticsltd.com"><strong>Email:</strong> info@muuvilitylogisticsltd.com</a></p>
-                    <p><a href="mailto:muuvylitylogisticsltd825@gmail.com"><strong>Email:</strong> imuuvylitylogisticsltd825@gmail.com</a></p>
+                    <p>
+                      <a href="mailto:growpropakafricaltdjk@gmail.com">
+                        <strong>Email:</strong> growpropakafricaltdjk@gmail.com
+                      </a>
+                    </p>
+                    
                   </span>
                 </p>
               </a>
@@ -138,7 +144,7 @@ const Contact = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
                 ></textarea>
               </div>
-              <button className="bg-customRed text-white font-bold px-6 py-3 rounded-xl hover:bg-red-700 transition-all">
+              <button className="bg-[#1b4808] text-white font-bold px-6 py-3 rounded-xl hover:bg-red-700 transition-all">
                 Send Message
               </button>
             </form>

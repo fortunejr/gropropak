@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 export default function MarqueeText() {
   return (
-    <div className="bg-customRed py-10 pb-16 h-12">
+    <div className="bg-[#1d4c08] py-10 pb-16 h-12">
       <Marquee
         gradient={false}
         speed={50}
@@ -12,15 +12,15 @@ export default function MarqueeText() {
       >
         <h2 className="stats-font mx-8 flex items-center gap-2">
             <BoxIcon />
-          Fast Delivery
+          Agro-Processing
         </h2>
         <h2 className="stats-font mx-8 flex items-center gap-2">
             <Ship />
-          Global Shipping
+          Global Shipping of Agricultural Products
         </h2>
         <h2 className="stats-font mx-8 flex items-center gap-2">
             <Warehouse />
-          Warehousing Solutions
+          Fertilizer and Cereal Production
         </h2>
         <h2 className="stats-font mx-8 flex items-center gap-2">
             <Globe />
