@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CircleCheckBig } from "lucide-react";
+import { CircleCheckBig, Leaf, Tractor, Factory } from "lucide-react";
 
 const advantagesList = [
   "Comprehensive agricultural expertise and services under one roof.",
@@ -12,162 +12,136 @@ const advantagesList = [
 
 const strategies = [
   {
-    title: "Expansion of Mechanized and Industrial Farming Operations: ",
-    body: "We aim to increase the scale and efficiency of crop and livestock production through advanced mechanization, modern farm management practices, and optimized resource utilization.",
+    icon: <Tractor className="w-8 h-8 text-white" />,
+    title: "Mechanized & Industrial Farming",
+    body: "Increase crop and livestock efficiency using advanced mechanization and modern farm management practices.",
+    bg: "bg-gradient-to-r from-green-500 to-green-700",
   },
   {
-    title:
-      "Strategic Investment in Agro-Processing and Manufacturing Facilities:",
-    body: " By developing processing plants and manufacturing units, we add value to raw agricultural produce, improve product quality, reduce post-harvest losses, and create competitive products for local and international markets.",
+    icon: <Factory className="w-8 h-8 text-white" />,
+    title: "Agro-Processing & Manufacturing",
+    body: "Develop processing plants to add value, reduce post-harvest losses, and create competitive products.",
+    bg: "bg-gradient-to-r from-yellow-500 to-yellow-600",
   },
   {
-    title: "Building Strong Export Partnerships for African Produce:",
-    body: "We focus on establishing reliable trade relationships with international buyers, exporters, and distributors to ensure that African agricultural products gain access to premium markets worldwide.",
+    icon: <Leaf className="w-8 h-8 text-white" />,
+    title: "Export Partnerships",
+    body: "Establish reliable trade relationships to bring African agricultural products to global premium markets.",
+    bg: "bg-gradient-to-r from-green-600 to-green-800",
   },
   {
-    title: "Integration of Digital Tools and Smart Farming Technologies:",
-    body: "We leverage modern digital solutions such as precision farming tools, farm management software, and data analytics to optimize production, monitor performance, and make informed operational decisions.",
+    icon: <Leaf className="w-8 h-8 text-white" />,
+    title: "Smart Farming Technologies",
+    body: "Leverage digital solutions and precision farming tools to optimize production and monitor performance.",
+    bg: "bg-gradient-to-r from-green-400 to-green-600",
   },
   {
-    title: "Continuous Training and Capacity Building for Farmers and Staff:",
-    body: "We prioritize human capital development through training programs, workshops, and knowledge-sharing initiatives, ensuring that farmers and employees are equipped with the latest skills, techniques, and best practices in modern agribusiness.",
+    icon: <Leaf className="w-8 h-8 text-white" />,
+    title: "Training & Capacity Building",
+    body: "Prioritize human capital development through workshops, training, and knowledge-sharing initiatives.",
+    bg: "bg-gradient-to-r from-yellow-400 to-yellow-500",
   },
 ];
 
-// Animation variants
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (index) => ({
+// Animation
+const fadeUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i = 1) => ({
     opacity: 1,
     y: 0,
-    transition: {
-      delay: index * 0.2, // staggered animation
-      duration: 0.6,
-      ease: "easeOut",
-    },
+    transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
   }),
 };
 
 const Advantages = () => {
   return (
-    <div className="container mx-auto px-5 py-16">
-      {/* Section heading */}
-      <motion.h2
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-3xl lg:text-4xl font-bold mb-12 text-center text-[#1b4808]"
-      >
-        Why Choose Us?
-      </motion.h2>
+    <div className="bg-[#f0faf4] py-20">
+      <div className="container mx-auto px-5">
+        {/* Section Heading */}
+        <motion.h2
+          className="text-3xl lg:text-4xl font-extrabold text-center text-[#1b4808] mb-16 relative"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          Why Choose Gropropak Africa?
+          <motion.div
+            className="absolute left-1/2 transform -translate-x-1/2 -bottom-5 w-32 h-1 bg-gradient-to-r from-green-400 to-green-700 rounded-full"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          />
+        </motion.h2>
 
-      {/* Advantages list */}
-      <ul className="space-y-6 mb-12">
-        {advantagesList.map((advantage, index) => (
-          <li key={index} className="flex items-start">
-            <CircleCheckBig className="mr-3 text-[#1b4808] flex-shrink-0 mt-1" />
-            <p className="text-gray-700">{advantage}</p>
-          </li>
-        ))}
-      </ul>
-
-      {/* Legacy & Leadership side by side on desktop */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-100 p-6 rounded-2xl mb-12">
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1b4808] mb-3 tracking-wide">
-            OUR LEGACY
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            Gropropak Africa Ltd is committed to leaving a lasting legacy of
-            agricultural transformation across Africa. Our work goes beyond
-            production and trade; we aim to empower farmers, create sustainable
-            employment opportunities, and establish resilient food security
-            systems that benet communities and national economies. By
-            integrating modern farming techniques, agro-processing, value chain
-            development, and responsible trade practices, we are building a
-            foundation for long-term agricultural growth, innovation, and
-            prosperity that will positively impact generations to come.
-          </p>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1b4808] mb-3 tracking-wide">
-            LEADERSHIP
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            The leadership team at Gropropak Africa Ltd is composed of visionary
-            professionals with extensive expertise in agriculture, agribusiness,
-            trade, and corporate governance. Each leader brings decades of
-            combined experience, guiding the company with strategic foresight,
-            operational excellence, and innovative thinking. Our leaders are
-            committed to fostering sustainable growth, strengthening market
-            linkages, and ensuring the highest standards of quality, safety, and
-            efciency across all operations. With their guidance, Gropropak
-            Africa Ltd continues to build a culture of excellence, integrity,
-            and impact, positioning the company as a trusted partner for
-            farmers, investors, and stakeholders in the African agricultural
-            sector.
-          </p>
-        </div>
-      </div>
-
-      {/* Strategies */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#1b4808] mb-6 tracking-wide">
-          STRATEGIES FOR GROWTH AND SUCCESS
-        </h2>
-        <p className="text-gray-700 mb-6">
-          Gropropak Africa Ltd employs a multi-faceted strategy to drive
-          sustainable growth, strengthen market presence, and enhance
-          agricultural productivity across Africa. Key strategies include:
-        </p>
-
-        <div className="space-y-6">
-          {strategies.map((strategy, index) => (
-            <motion.div
-              key={index}
+        {/* Advantages Animated List */}
+        <motion.ul className="grid md:grid-cols-2 gap-8 mb-20">
+          {advantagesList.map((adv, idx) => (
+            <motion.li
+              key={idx}
+              custom={idx}
+              variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              custom={index}
-              variants={cardVariants}
               viewport={{ once: true }}
-              className="p-6 rounded-xl bg-white shadow-md"
+              className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <h4 className="text-lg font-semibold text-[#1b4808] mb-2">
-                {strategy.title}
-              </h4>
-              <p className="text-gray-700 leading-relaxed">{strategy.body}</p>
+              <CircleCheckBig className="text-green-600 w-8 h-8 mt-1" />
+              <p className="text-gray-800 text-lg font-medium">{adv}</p>
+            </motion.li>
+          ))}
+        </motion.ul>
+
+        {/* Strategies Section */}
+        <motion.h3
+          className="text-4xl font-bold text-[#1b4808] mb-8 text-center"
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          Strategies for Growth
+        </motion.h3>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {strategies.map((strategy, idx) => (
+            <motion.div
+              key={idx}
+              custom={idx}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.03, y: -5 }}
+              transition={{ duration: 0.3 }}
+              className={`${strategy.bg} p-6 rounded-3xl shadow-lg flex flex-col gap-4 cursor-pointer`}
+            >
+              <div className="flex items-center gap-3">
+                {strategy.icon}
+                <h4 className="text-white text-xl font-bold">{strategy.title}</h4>
+              </div>
+              <p className="text-white">{strategy.body}</p>
             </motion.div>
           ))}
         </div>
 
-        <p className="text-gray-700 mt-6">
-          Through these strategies, Gropropak Africa Ltd strengthens its
-          competitive edge, promotes sustainable agriculture, and drives
-          economic growth while empowering farmers and communities.
-        </p>
-      </div>
-
-      {/* Craftsmanship */}
-      <div>
-        <h2 className="text-2xl font-semibold text-[#1b4808] mb-4 tracking-wide">
-          CRAFTSMANSHIP AND QUALITY
-        </h2>
-        <p className="text-gray-700 leading-relaxed">
-          At Gropropak Africa Ltd, we are dedicated to excellence in every facet
-          of our operations. From farm production to agro-processing, equipment
-          supply, and distribution, we ensure that all products and services
-          meet the highest standards of quality and reliability. We achieve this
-          by leveraging premium inputs, advanced machinery, and modern
-          technology, combined with skilled personnel and globally recognized
-          best practices. Our rigorous quality control systems, adherence to
-          regulatory standards, and commitment to continuous improvement
-          guarantee that every product delivered and service rendered provides
-          lasting value to our clients, partners, and stakeholders. By
-          maintaining uncompromising standards in craftsmanship and quality,
-          Gropropak Africa Ltd builds trust, strengthens its brand reputation,
-          and ensures sustainable success across all areas of agribusiness.
-        </p>
+        {/* Craftsmanship Section */}
+        <motion.div
+          className="mt-20 p-10 bg-gradient-to-r from-green-50 to-green-100 rounded-3xl shadow-xl"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <h3 className="text-3xl font-bold text-[#1b4808] mb-4">Craftsmanship & Quality</h3>
+          <p className="text-gray-800 leading-relaxed text-lg">
+            At Gropropak Africa Ltd, excellence is at the core of every operation. From farm production
+            to agro-processing, equipment supply, and distribution, we ensure all products and services
+            meet the highest quality standards. We leverage advanced machinery, skilled personnel, and
+            modern technology to guarantee sustainable success and lasting value for all stakeholders.
+          </p>
+        </motion.div>
       </div>
     </div>
   );

@@ -56,49 +56,64 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-5 bg-white text-[#1b4808]">
-      <div className="container mx-auto px-6 lg:px-12">
-        {/* Section Header */}
-        <div className="bg-[#8db937] px-2 py-5 rounded-xl shadow-sm mb-10">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center">
+    <section className="py-16 bg-[#f7f9f4] text-[#1b4808] relative">
+
+      {/* Subtle leaf texture overlay */}
+      <div className="absolute inset-0 bg-[url('/leaf-texture.png')] opacity-5 pointer-events-none"></div>
+
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+
+        {/* Header */}
+        <div className="text-center mb-14">
+          <h2 className="inline-block px-8 py-4 text-3xl lg:text-4xl font-extrabold tracking-wide text-[#1b4808] text-custom">
             Our Services
           </h2>
         </div>
 
-        {/* Services Grid */}
-        <div className="space-y-20">
+        {/* Services List */}
+        <div className="space-y-24">
           {services.map((service, index) => (
             <div
               key={index}
-              className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+              className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${
+                index % 2 === 1 ? "md:flex-row-reverse" : ""
+              }`}
             >
-              {/* Image side */}
+              {/* Image */}
               <div className="w-full">
-                <img
-                  src={service.img}
-                  alt={service.heading}
-                  className="w-full object-contain rounded-xl shadow-md "
-                />
+                <div className="rounded-2xl overflow-hidden shadow-xl bg-white/30 backdrop-blur-md border border-green-900/10">
+                  <img
+                    src={service.img}
+                    alt={service.heading}
+                    className="w-full object-cover"
+                  />
+                </div>
               </div>
 
-              {/* Text side */}
+              {/* Text */}
               <div>
-                <h3 className="text-xl font-semibold mb-3">
+                <h3 className="text-2xl font-bold text-[#0f3010] leading-snug mb-4">
                   {service.heading.split("&").map((part, i, arr) => (
                     <React.Fragment key={i}>
-                      <span className="text-black">{part.trim()}</span>
+                      <span>{part.trim()}</span>
                       {i < arr.length - 1 && (
-                        <span className="text-customRed"> & </span>
+                        <span className="text-[#8db937] font-semibold"> & </span>
                       )}
                     </React.Fragment>
                   ))}
                 </h3>
-                <hr className="mb-2"/>
+
+                <div className="h-1 w-24 bg-[#8db937] rounded-full mb-5"></div>
+
                 <div className="flex items-start gap-3">
-                  <FaCheckCircle className="text-[#1b4808] mt-1 flex-shrink-0" />
-                  <p className="text-left text-gray-700">{service.body}</p>
+                  <FaCheckCircle className="text-[#4e8f22] mt-1 flex-shrink-0 text-xl" />
+
+                  <p className="text-gray-700 leading-relaxed text-[15px]">
+                    {service.body}
+                  </p>
                 </div>
               </div>
+
             </div>
           ))}
         </div>

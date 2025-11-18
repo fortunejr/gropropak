@@ -5,30 +5,35 @@ import { useInView } from "react-intersection-observer";
 const Stats = () => {
   const stats = [
     { number: 75, label: "Trusted Partners & Clients" },
-    { number: 1000, label: "Poultry, Livestock & Fishes farmed" },
+    { number: 1000, label: "Poultry, Livestock & Fishes Farmed" },
     { number: 25, label: "Skilled Workers & Experts" },
   ];
 
   return (
-    <section className="py-6 flex justify-center px-4">
-      <div className="bg-[#3a751f] rounded-2xl px-10 py-10 max-w-5xl w-full text-center">
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:gap-12 gap-5">
+    <section className="py-16 px-6 flex justify-center">
+      <div className="w-full max-w-6xl bg-gradient-to-r from-[#1f4d0c] to-[#376b1a] rounded-3xl shadow-xl p-12 relative overflow-hidden">
+
+        {/* Light leaf texture overlay */}
+        <div className="absolute inset-0 bg-[url('/leaf-texture.png')] opacity-10 mix-blend-overlay pointer-events-none"></div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 relative z-10">
           {stats.map((stat, index) => {
             const { ref, inView } = useInView({
               triggerOnce: true,
-              threshold: 0.3,
+              threshold: 0.2,
             });
 
             return (
               <div
                 key={index}
                 ref={ref}
-                className="transform transition duration-500 hover:scale-105 bg-green-950/25 rounded-xl px-5 py-4 "
+                className="text-center bg-white/10 backdrop-blur-sm rounded-2xl py-10 px-6 border border-white/20 shadow-md hover:shadow-lg transition-all hover:-translate-y-1"
               >
-                <h2 className="stats-font lg:text-5xl text-4xl font-extrabold text-yellow-400">
-                  {inView ? <CountUp end={stat.number} duration={2.5} /> : 0}+
+                <h2 className="text-5xl lg:text-6xl font-extrabold text-[#f6d86b] drop-shadow-sm">
+                  {inView ? <CountUp end={stat.number} duration={2.2} /> : 0}+
                 </h2>
-                <p className="mt-3 text-lg text-white tracking-wide font-medium">
+
+                <p className="mt-4 text-lg text-white/95 font-medium leading-relaxed">
                   {stat.label}
                 </p>
               </div>
